@@ -1,123 +1,98 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2575.6">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Energía Solar</title>
+  <style>
+    body {
+      background-color: #f0f8ff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+      padding: 30px;
+      background-color: white;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      margin-top: 50px;
+    }
+    h1 {
+      text-align: center;
+      color: #0077b6;
+    }
+    input, label {
+      display: block;
+      width: 100%;
+      margin-bottom: 15px;
+      font-size: 16px;
+    }
+    input[type="text"], input[type="tel"], input[type="email"] {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    .question {
+      margin-bottom: 15px;
+    }
+    .question span {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    .question label {
+      display: inline;
+      margin-right: 20px;
+    }
+    button {
+      background-color: #00b4d8;
+      color: white;
+      padding: 12px;
+      width: 100%;
+      border: none;
+      border-radius: 6px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0096c7;
+    }
+    .footer {
+      text-align: center;
+      font-size: 24px;
+      color: #0077b6;
+      margin-top: 20px;
+    }
   </style>
 </head>
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="es"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;Programa Energía Solar&lt;/title&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>body {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-family: Arial, sans-serif;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background-color: #f0f8ff;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin: 0;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 0;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>justify-content: center;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>min-height: 100vh;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.container {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background-color: #ffffff;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 30px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 12px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>max-width: 400px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>width: 90%;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>h1 {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: #0077b6;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size: 22px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 10px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>h2 {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: #023e8a;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size: 32px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>input[type="text"], input[type="tel"], input[type="email"] {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>width: 100%;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 10px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin: 8px 0;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border: 1px solid #ccc;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 5px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size: 16px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.question {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 15px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.question label {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display: block;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 5px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-weight: bold;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.question input[type="radio"] {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-right: 8px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>button {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background-color: #00b4d8;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: white;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 12px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>width: 100%;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border: none;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 6px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size: 18px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>cursor: pointer;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>button:hover {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background-color: #0096c7;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.footer {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size: 13px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: #555;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h1&gt;¡Nuevo programa de&lt;/h1&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2&gt;energía solar que te paga hasta $1,200!&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;form&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;input type="text" name="name" placeholder="Nombre y Apellido" required&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;input type="tel" name="phone" placeholder="Teléfono" required&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;input type="email" name="email" placeholder="Correo Electrónico" required&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="question"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;label&gt;¿Estás interesado(a) en una consulta gratuita?&lt;/label&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;input type="radio" name="consulta" value="si"&gt; Sí</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;input type="radio" name="consulta" value="no"&gt; No</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="question"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;label&gt;¿Tienes techo propio donde instalar paneles solares?&lt;/label&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;input type="radio" name="techo" value="si"&gt; Sí</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;input type="radio" name="techo" value="no"&gt; No</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;button type="submit"&gt;¡CUALIFICA HOY!&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/form&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="footer"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>Sin importar crédito | $0 inversión | Garantía ilimitada</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+  <div class="container">
+    <h1>¡Nuevo programa de energía solar que te paga hasta $1,200!</h1>
+    <form action="https://formsubmit.co/felixsilvestrini@gmail.com" method="POST">
+      <input type="text" name="Nombre y Apellido" placeholder="Nombre y Apellido" required>
+      <input type="tel" name="Teléfono" placeholder="Teléfono" required>
+      <input type="email" name="Correo Electrónico" placeholder="Correo Electrónico" required>
+
+      <div class="question">
+        <span>¿Estás interesado(a) en una consulta gratuita?</span>
+        <label><input type="radio" name="Consulta Gratuita" value="Sí" required> Sí</label>
+        <label><input type="radio" name="Consulta Gratuita" value="No" required> No</label>
+      </div>
+
+      <div class="question">
+        <span>¿Tienes techo propio donde instalar paneles solares?</span>
+        <label><input type="radio" name="Techo Propio" value="Sí" required> Sí</label>
+        <label><input type="radio" name="Techo Propio" value="No" required> No</label>
+      </div>
+
+      <button type="submit">¡CUALIFICA HOY!</button>
+    </form>
+    <div class="footer">
+      Sin importar crédito | $0 inversión | Garantía ilimitada
+    </div>
+  </div>
 </body>
 </html>
